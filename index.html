@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+  </body>
+</html>
+
+      <script type="text/javascript">
+        function buymilk(money,costperbottle){
+// console.log("leave house");
+// console.log("moveRight");
+// console.log("moveRight");
+// console.log("moveup");
+// console.log("moveup");
+// console.log("moveup");
+// console.log("moveup");
+var numberofbottles=Math.floor(money/costperbottle);
+ alert("you have bought " + numberofbottles + " number of milk" );
+// console.log("movedown");
+// console.log("movedown");
+// console.log("movedown");
+// console.log("movedown");
+// console.log("movedown");
+// console.log("movedown");
+// console.log("moveleft");
+return calchange(money,costperbottle);
+}
+
+function calbottles(startingmoney,costperbottle){
+var numberofbottles=Math.floor(startingmoney/costperbottle);
+    return numberofbottles;
+}
+function calchange(startingamount,costperbottle){
+    var change=startingamount%costperbottle;
+return change;
+}
+var cost=prompt("how much cost do you want to invest for milk bottle");
+var numofmilk=prompt("What is price of one bottle of milk");
+
+alert("Hello Master After buying milk Here is your " + buymilk(cost,numofmilk)+"$ change");
+      </script>
